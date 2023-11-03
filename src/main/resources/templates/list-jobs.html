@@ -15,6 +15,10 @@
   <table class="job-listing" th:each = "job : ${jobs}">
     <th:block>
       <tr>
+        <td>All</td>
+        <td th:text = "${job}"></td>
+      </tr>
+      <tr>
         <td>ID</td>
         <td th:text = "${job.id}"></td>
       </tr>
