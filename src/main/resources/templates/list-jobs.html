@@ -15,10 +15,6 @@
   <table class="job-listing" th:each = "job : ${jobs}">
     <th:block>
       <tr>
-        <td>All</td>
-        <td th:text = "${job}"></td>
-      </tr>
-      <tr>
         <td>ID</td>
         <td th:text = "${job.id}"></td>
       </tr>
@@ -35,9 +31,14 @@
         <td th:text = "${job.positionType}"></td>
       </tr>
       <tr>
+        <td>Position Type</td>
+        <td th:text = "${job.location}"></td>
+      </tr>
+      <tr>
         <td>Skill</td>
         <td th:text = "${job.coreCompetency}"></td>
       </tr>
+
     </th:block>
   </table>
 
